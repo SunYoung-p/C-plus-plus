@@ -2,11 +2,13 @@
 
 int main(void)
 {
-    int num = 20;
-    std::cout << "Hello World!" << std::endl;
-    std::cout << "Hello "
-              << "World!" << std::endl;
-    std::cout << num << ' ' << 'A';
-    std::cout << ' ' << 3.14 << std::endl;
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 8; j++)
+        {
+            std::cout << i + 1 << " x " << j + 1 << " = " << (i + 1) * (j + 1) << std::endl;
+        }
+        std::cout << std::endl;
+    }
     return 0;
 }
