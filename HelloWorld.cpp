@@ -1,14 +1,14 @@
 #include <iostream>
 
-int main(void)
+template <typename T>
+
+inline T squre(T x)
 {
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j < 8; j++)
-        {
-            std::cout << i + 1 << " x " << j + 1 << " = " << (i + 1) * (j + 1) << std::endl;
-        }
-        std::cout << std::endl;
-    }
-    return 0;
+    return x * x;
+}
+
+int main()
+{
+    std::cout << squre(5.15) << std::endl;
+    std::cout << squre(5) << std::endl;
 }
